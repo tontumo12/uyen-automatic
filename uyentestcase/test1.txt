@@ -1,0 +1,6 @@
+name: Test login
+open_web: https://bus.liberal.vn/login
+find_xpath: /html/body/div[1]/div/div/div[1]/div/div[1]/div/div/div/form/div/div/div/div[1]/div[1]/input -input- admin-nguyen-hue
+find_xpath: /html/body/div[1]/div/div/div[1]/div/div[1]/div/div/div/form/div/div/div/div[1]/div[2]/input -input- abc123
+find_xpath: /html/body/div[1]/div/div/div[1]/div/div[1]/div/div/div/form/div/div/div/div[2]/button -click- clic
+check_title: school-bus-admin-dashboard
