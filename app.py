@@ -42,6 +42,8 @@ def phantichcuphap(sytaxs:list):
         if(sytax.find('check_title:') > -1):
             query = sytax.split("check_title: ")[1]
             checkTitleWebSite(query, sytax)
+        if(sytax.find('-enter-') > -1):
+            openElementAndEnter(sytax)
 
 def openWebUrl(url, sytax):
     try:
@@ -72,6 +74,14 @@ def openElementAndClickButton(sytax):
     try:
         xpath = getContentElement(sytax,' -click- ')
         xpath.click()
+        print(style.GREEN + sytax + ' ---------------SUCCESS')
+    except:
+        print(style.RED + sytax + ' ---------------ERROR')
+
+def openElementAndEnter(sytax):
+    try:
+        xpath = getContentElement(sytax,' -enter- ')
+        xpath.submit() 
         print(style.GREEN + sytax + ' ---------------SUCCESS')
     except:
         print(style.RED + sytax + ' ---------------ERROR')

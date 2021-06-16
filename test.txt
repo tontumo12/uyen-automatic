@@ -1,0 +1,19 @@
+name: Test case tese simple
+open_web: https://freetuts.net/
+find_xpath: /html/body/div[2]/div[2]/div[3]/div[2]/div[1]/div[2]/header/h2/span -compare- LẬP TRÌNH
+find_xpath: /html/body/div[2]/div[1]/header/div/div[2]/div/div/div/div/div/div[2]/form/input[1] -input- Bùi Thanh Uyên test auto input
+find_xpath: /html/body/div[2]/div[1]/header/div/div[2]/div/div/div/div/div/div[2]/form/button -click- clic
+
+sytax tìm element:
+    find_xpath ==== xpath của element
+    find_id ==== id của element
+    find_class ==== class của element
+sytax câu lệnh:
+    compare ==== so sánh
+    input ==== Nhập input
+    click ==== click
+
+cấu trúc 1 testcase:
+    Bắt đầu = câu: "name: Tên test case"
+    Để mở 1 web bất kỳ và chạy test câu lệnh: "open_web: https://google.com"
+    Cấu trúc của 1 câu lệnh auto test: "sytax tìm element: 'element trây = brower' -"câu lệnh"- "giá trị" 
