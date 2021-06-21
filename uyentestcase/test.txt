@@ -1,5 +1,0 @@
-name: Test login
-open_web: https://github.com/
-find_xpath: /html/body/div[1]/header/div/div[2]/div[2]/div/div/div/form/label/input[1] -input- uyen-automatic
-find_xpath: /html/body/div[1]/header/div/div[2]/div[2]/div/div/div/form/label/input[1] -enter- uyen-automatic
-check_title: school-bus-admin-dashboard
